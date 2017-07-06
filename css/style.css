@@ -1,0 +1,195 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+/* ---- reset ---- */
+
+html, body {
+	position: absolute;
+	margin: 0;
+	overflow: auto;
+  width:100%;
+  height:100%;
+  font-family: Raleway;
+  font-weight: 200;
+	font-size: 20px;
+  color: rgba(255,255,255,1);
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #01294d;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 100% 100%;
+}
+
+/* ---- Content ---- */
+.container {
+	left: 5%;
+  right: 5%;
+  top: 5%;
+  bottom: 5%;
+	position: relative;
+	float: left;
+	margin: 10px;
+	padding: 10px;
+	max-width: 480px;
+	height: 300px;
+
+}
+
+h1.title {
+  color: white;
+  position: relative;
+  font-size: 3vw;
+  font-weight: 400;
+}
+p.desc{
+  position: relative;
+  font-size: 2vw;
+  color: rgba(255,255,255,1);
+  font-weight: 200;
+}
+
+/* ---- Avatar ---- */
+.avatar {
+  border-color: white;
+  border-radius: 64px;
+  border-style: solid;
+  border-width: 4px;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  background: url(../images/profile.jpg) no-repeat;
+  background-size:100%;
+  background-position: center;
+  background-color: RGBA(255,255,255,.15);
+}
+
+/* ----  social icon ---- */
+.fa-facebook, .fa-twitter, .fa-youtube, .fa-instagram, .fa-pinterest, .fa-github, .fa-flickr, .fa-linkedin, .fa-rocket {
+	padding: 0 5px 0 5px;
+  font-size: 2vw;
+  color: #fff;
+}
+.social {
+}
+.social ul {
+  list-style: none;
+	overflow: hidden;
+	margin: 0;
+  padding: 0;
+}
+.social li {
+	display: inline-flex;
+}
+
+.foot {
+	width: 100%;
+  height: 30px;
+  font-size: 9px;
+  text-align: left;
+  bottom: 0;
+}
+
+/* TERMINAL */
+
+.titleterm{
+  text-align: center;
+}
+.terminal-window {
+  text-align: left;
+  width: calc(60vw - 50px);
+  height: calc(80vh - 50px);
+  border-radius: 10px;
+  margin: auto;
+  position: relative;
+}
+
+.terminal-window header {
+  background: #E0E8F0;
+  height: 30px;
+  border-radius: 8px 8px 0 0;
+  padding-left: 10px;
+}
+
+.terminal-window header .button {
+  width: 12px;
+  height: 12px;
+  margin: 10px 4px 0 0;
+  display: inline-block;
+  border-radius: 8px;
+}
+
+.terminal-window header .button.green {
+  background: #3BB662;
+}
+
+.terminal-window header .button.yellow {
+  background: #E5C30F;
+}
+
+.terminal-window header .button.red {
+  background: #E75448;
+}
+
+.terminal-window section.terminalsec {
+  color: white;
+  font-family: "Source Code Pro", Menlo, Monaco, "Consolas", "Courier New", "Courier";
+  font-size: 10pt;
+  background: #30353A;
+  opacity: 0.7;
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  top: 30px;
+  bottom: 0;
+  overflow: auto;
+}
+
+.terminal-window section.terminalsec .typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+.terminal-window section.terminalsec a {
+    color: #bde371;
+    font-weight: bold;
+}
+.terminal-window section.terminalsec a:hover {
+    color:rgba(255,255,255,1);
+    font-weight: bold;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.terminal-data { display: none; }
+.terminal-window .gray { color: gray; }
+.terminal-window .green { color: green;}
