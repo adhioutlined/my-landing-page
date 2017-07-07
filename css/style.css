@@ -144,7 +144,7 @@ footer {
 .terminal-window header .title {
   display: inline-block;
 	color: black;
-	font-size: 10pt;
+	font-size: 1.5vw;
 	font-weight: bold;
 	text-align: center;
 	position: relative;
